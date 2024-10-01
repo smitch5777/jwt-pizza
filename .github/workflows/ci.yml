@@ -50,11 +50,6 @@ jobs:
           git add .
           git commit -m "generated"
           git push
-      - name: Update pages artifact
-        uses: actions/upload-artifact@v4
-        with:
-          name: package
-          path: dist/
   deploy:
     needs: build
     permissions:
