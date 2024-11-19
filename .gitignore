@@ -9,3 +9,4 @@ dist
 /blob-report/
 /playwright/.cache/
 .nyc_output
+/har/
