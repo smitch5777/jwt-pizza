@@ -85,27 +85,6 @@ export function scenario_1() {
       console.log(response.body);
       fail("Login was *not* 200");
     }
-
-    response = http.options(
-      "https://pizza-service.stevencs329.com/api/auth",
-      null,
-      {
-        headers: {
-          accept: "*/*",
-          "accept-encoding": "gzip, deflate, br, zstd",
-          "accept-language": "en-US,en;q=0.9",
-          "access-control-request-headers": "content-type",
-          "access-control-request-method": "PUT",
-          "cache-control": "no-cache",
-          origin: "https://pizza.stevencs329.com",
-          priority: "u=1, i",
-          "sec-fetch-dest": "empty",
-          "sec-fetch-mode": "cors",
-          "sec-fetch-site": "same-site",
-          "sec-gpc": "1",
-        },
-      }
-    );
     sleep(4.7);
 
     response = http.get(
@@ -124,27 +103,6 @@ export function scenario_1() {
             '"Google Chrome";v="131", "Chromium";v="131", "Not_A Brand";v="24"',
           "sec-ch-ua-mobile": "?0",
           "sec-ch-ua-platform": '"Windows"',
-          "sec-fetch-dest": "empty",
-          "sec-fetch-mode": "cors",
-          "sec-fetch-site": "same-site",
-          "sec-gpc": "1",
-        },
-      }
-    );
-
-    response = http.options(
-      "https://pizza-service.stevencs329.com/api/order/menu",
-      null,
-      {
-        headers: {
-          accept: "*/*",
-          "accept-encoding": "gzip, deflate, br, zstd",
-          "accept-language": "en-US,en;q=0.9",
-          "access-control-request-headers": "authorization,content-type",
-          "access-control-request-method": "GET",
-          "cache-control": "no-cache",
-          origin: "https://pizza.stevencs329.com",
-          priority: "u=1, i",
           "sec-fetch-dest": "empty",
           "sec-fetch-mode": "cors",
           "sec-fetch-site": "same-site",
@@ -173,27 +131,6 @@ export function scenario_1() {
         "sec-gpc": "1",
       },
     });
-
-    response = http.options(
-      "https://pizza-service.stevencs329.com/api/franchise",
-      null,
-      {
-        headers: {
-          accept: "*/*",
-          "accept-encoding": "gzip, deflate, br, zstd",
-          "accept-language": "en-US,en;q=0.9",
-          "access-control-request-headers": "authorization,content-type",
-          "access-control-request-method": "GET",
-          "cache-control": "no-cache",
-          origin: "https://pizza.stevencs329.com",
-          priority: "u=1, i",
-          "sec-fetch-dest": "empty",
-          "sec-fetch-mode": "cors",
-          "sec-fetch-site": "same-site",
-          "sec-gpc": "1",
-        },
-      }
-    );
     sleep(9.7);
 
     response = http.post(
@@ -220,27 +157,6 @@ export function scenario_1() {
         },
       }
     );
-
-    response = http.options(
-      "https://pizza-service.stevencs329.com/api/order",
-      null,
-      {
-        headers: {
-          accept: "*/*",
-          "accept-encoding": "gzip, deflate, br, zstd",
-          "accept-language": "en-US,en;q=0.9",
-          "access-control-request-headers": "authorization,content-type",
-          "access-control-request-method": "POST",
-          "cache-control": "no-cache",
-          origin: "https://pizza.stevencs329.com",
-          priority: "u=1, i",
-          "sec-fetch-dest": "empty",
-          "sec-fetch-mode": "cors",
-          "sec-fetch-site": "same-site",
-          "sec-gpc": "1",
-        },
-      }
-    );
     sleep(2.3);
 
     response = http.post(
@@ -260,27 +176,6 @@ export function scenario_1() {
             '"Google Chrome";v="131", "Chromium";v="131", "Not_A Brand";v="24"',
           "sec-ch-ua-mobile": "?0",
           "sec-ch-ua-platform": '"Windows"',
-          "sec-fetch-dest": "empty",
-          "sec-fetch-mode": "cors",
-          "sec-fetch-site": "cross-site",
-          "sec-gpc": "1",
-        },
-      }
-    );
-
-    response = http.options(
-      "https://pizza-factory.cs329.click/api/order/verify",
-      null,
-      {
-        headers: {
-          accept: "*/*",
-          "accept-encoding": "gzip, deflate, br, zstd",
-          "accept-language": "en-US,en;q=0.9",
-          "access-control-request-headers": "authorization,content-type",
-          "access-control-request-method": "POST",
-          "cache-control": "no-cache",
-          origin: "https://pizza.stevencs329.com",
-          priority: "u=1, i",
           "sec-fetch-dest": "empty",
           "sec-fetch-mode": "cors",
           "sec-fetch-site": "cross-site",
